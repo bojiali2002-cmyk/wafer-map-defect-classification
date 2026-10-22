@@ -1,0 +1,17 @@
+# Raw datasets and local environments
+/data/raw/*
+!/data/raw/.gitkeep
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.joblib
+*.pkl
+*.zip
+# Keep saved metrics, split manifests and the documented small NPZ subset.
