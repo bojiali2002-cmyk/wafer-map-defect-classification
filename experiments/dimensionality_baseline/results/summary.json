@@ -1,0 +1,42 @@
+{
+  "selected_on_validation": {
+    "method": "PCA",
+    "classifier": "3NN",
+    "dimension": 16,
+    "accuracy": 0.7838179519595448,
+    "balanced_accuracy": 0.8082926829268293,
+    "macro_f1": 0.7990022916384151
+  },
+  "selected_test": {
+    "accuracy": 0.39913366336633666,
+    "balanced_accuracy": 0.4182107993697128,
+    "macro_f1": 0.4347271850943046
+  },
+  "cnn_common_test": {
+    "accuracy": 0.359529702970297,
+    "balanced_accuracy": 0.3857236298803165,
+    "macro_f1": 0.34811541415658437
+  },
+  "macro_f1_delta": 0.08661177093772021,
+  "macro_f1_delta_ci95": [
+    0.06359153841675334,
+    0.10993984963510521
+  ],
+  "balanced_accuracy_delta": 0.032487169489396284,
+  "integration_eligible": true,
+  "bootstrap": "paired class-stratified percentile bootstrap; sample uncertainty only, not lot-level or training uncertainty",
+  "inference_median_ms_per_sample": 0.008177499985322356,
+  "timing_batch_size": 100,
+  "inference_note": "Includes PCA/LDA and classifier, excludes image preprocessing and I/O; no comparable CNN timing measured",
+  "development_seconds": 0.49314025009516627,
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "sklearn": "1.9.1",
+  "cnn_note": "Original CNN trained on substantially more samples. Previously observed official test set is reused as a retrospective benchmark, not a new prospective test.",
+  "comparison_note": "Class-capped test subset after exact-input deduplication, not production prevalence; same test indices for every method; no test-driven configuration changes.",
+  "lot_bootstrap_macro_f1_delta_ci95": [
+    0.05959037798078396,
+    0.11216925128064113
+  ],
+  "integration_scope": "Add a documented classical baseline only if eligible; no CNN replacement."
+}
