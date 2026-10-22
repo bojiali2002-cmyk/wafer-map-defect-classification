@@ -1,0 +1,72 @@
+{
+  "train": {
+    "before_dedup": 3758,
+    "after_dedup": 3757,
+    "removed_duplicate_images": 1,
+    "classes": {
+      "none": 500,
+      "Loc": 500,
+      "Edge-Loc": 500,
+      "Center": 500,
+      "Edge-Ring": 500,
+      "Random": 487,
+      "Scratch": 400,
+      "Donut": 327,
+      "Near-full": 43
+    },
+    "lots": 2339
+  },
+  "validation": {
+    "before_dedup": 792,
+    "after_dedup": 791,
+    "removed_duplicate_images": 1,
+    "classes": {
+      "Scratch": 100,
+      "none": 100,
+      "Loc": 100,
+      "Random": 100,
+      "Edge-Loc": 100,
+      "Center": 100,
+      "Edge-Ring": 100,
+      "Donut": 82,
+      "Near-full": 9
+    },
+    "lots": 501
+  },
+  "test": {
+    "before_dedup": 1641,
+    "after_dedup": 1616,
+    "removed_duplicate_images": 25,
+    "classes": {
+      "Loc": 200,
+      "none": 199,
+      "Center": 199,
+      "Edge-Loc": 199,
+      "Edge-Ring": 199,
+      "Scratch": 197,
+      "Random": 188,
+      "Donut": 146,
+      "Near-full": 89
+    },
+    "lots": 1151
+  },
+  "seed": 20261021,
+  "classes": [
+    "Center",
+    "Donut",
+    "Edge-Loc",
+    "Edge-Ring",
+    "Loc",
+    "Near-full",
+    "Random",
+    "Scratch",
+    "none"
+  ],
+  "preprocessing": "center zero-pad to square; floor-index nearest resize 64x64; divide by 2",
+  "raw_sha256": "1d04fccb3dd3176b276878b926b20fead7e077c5751e4d353ea9741a5e7b5c65",
+  "subset_sha256": "63e2ea9d93c7471b22139cc6190cbc00f29f0f238ac0df3dfc6d5ed003139bcf",
+  "source": "https://www.kaggle.com/datasets/qingyi/wm811k-wafer-map",
+  "split_policy": "preserve original project train/validation/test manifests; independent within-class caps; remove exact duplicates of final inputs across and within selected splits, train then validation then test priority",
+  "cnn_provenance": "previously saved original CNN predictions, not a newly trained CNN; trained with more data; same test source indices and labels checked",
+  "integration_rule": "Only consider adding a baseline if validation-selected method has >=0.03 macro-F1 gain over CNN, positive lower 95% paired bootstrap bound, and higher balanced accuracy on the common test subset. No CNN replacement or deployment claim."
+}

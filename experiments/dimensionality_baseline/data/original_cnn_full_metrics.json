@@ -1,0 +1,13 @@
+{
+  "test_samples": 118595,
+  "accuracy": 0.9438424891437245,
+  "macro_f1": 0.41602061078473507,
+  "weighted_f1": 0.9286454331980709,
+  "balanced_accuracy": 0.3820946479685816,
+  "illustrative_review_threshold": 0.7,
+  "review_rate": 0.22111387495256968,
+  "error_capture_rate": 0.618018018018018,
+  "accepted_accuracy": 0.9724591867665526,
+  "best_validation_epoch": 7,
+  "best_validation_macro_f1": 0.7041378205970299
+}
