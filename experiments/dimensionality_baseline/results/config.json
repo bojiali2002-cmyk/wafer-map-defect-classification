@@ -1,0 +1,32 @@
+{
+  "seed": 20261021,
+  "pca_dimensions": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "lda_dimensions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "lda_input_dimensions": 128,
+  "classifiers": [
+    "3NN",
+    "NCM"
+  ],
+  "selection_metric": "validation_macro_f1",
+  "bootstrap_repetitions": 2000,
+  "pca_whiten": false,
+  "pca_randomized_iter": 5
+}

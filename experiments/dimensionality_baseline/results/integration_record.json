@@ -1,0 +1,13 @@
+{
+  "added_directory": "<LOCAL_PROJECT_PATH>",
+  "readme_index_added": true,
+  "original_CNN_files_unchanged": true,
+  "protected_file_hashes": {
+    "src/model.py": "c1750e734f6ac4710205d0a1769872cc369bc976a7114a2939247ca522d8d698",
+    "src/preprocessing.py": "6fb868db81e88ce5472f0bb7593572d1db1099e7c704d2299d6bae1ab58a411b",
+    "src/data_loading.py": "9154c6007ac26430adc6905bdd7cbe0812cde00e4cb4fecc7fffc92e27f62066",
+    "models/best_wafer_map_cnn.pt": "62343caf531e13fa0eb010b7a413f59b36b88591772dd5d7cfea769223178342",
+    "models/final_metrics.json": "6184427fa76f539db64d29b83ace8fd110c506c8071eb87dd7301e951218cc57"
+  },
+  "scope": "independent baseline experiment; no CNN replacement"
+}
